@@ -51,7 +51,7 @@ const addNewTask = () => {
 		todoInput.value = ''
 		errorInfo.textContent = ''
 	} else {
-		errorInfo.textContent = 'Wpisz treść zadania!'
+		errorInfo.textContent = 'Enter the task!'
 	}
 }
 
@@ -109,7 +109,7 @@ const changeTaskText = () => {
 		popup.style.display = 'none'
 		popupInfo.textContent = '' // clearing after eventual 'Podaj treść' error
 	} else {
-		popupInfo.textContent = 'Podaj treść'
+		popupInfo.textContent = 'Enter the content'
 	}
 }
 
@@ -119,7 +119,7 @@ const deleteTask = e => {
 	const allTasks = ulList.querySelectorAll('li') //loads existing li elements at every deleteBt click --> it creates array like element
 	if (allTasks.length === 0) {
 		// if array has 0 elements
-		errorInfo.textContent = 'Brak zadań na liście.'
+		errorInfo.textContent = 'No tasks on the list'
 	}
 }
 
